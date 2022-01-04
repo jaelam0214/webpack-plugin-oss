@@ -110,7 +110,9 @@ class WebpackAliyunOss {
       overwrite,
       bail,
       parallel,
-      logToLocal
+      logToLocal,
+      setVersion,
+      version
     } = this.config
 
     if (test) {

@@ -1,6 +1,6 @@
 {
   "name": "webpack-plugin-oss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Update the packaged file directory to OSS",
   "main": "index.js",
   "scripts": {
