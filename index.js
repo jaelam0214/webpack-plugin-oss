@@ -213,8 +213,12 @@ class WebpackAliyunOss {
 
     await tasks.run().then(async () => {
       if (setVersion && version && !test) {
-        await setVersion({ version: version })
-        console.log(`\nversion: ${version}\n`)
+        try {
+          await setVersion({ version: version })
+          console.log(`\nversion: ${version}\n`)
+        } catch (e) {
+          console.log(e)
+        }
       }
     }).catch(() => { })
 
